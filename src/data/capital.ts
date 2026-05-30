@@ -1,0 +1,65 @@
+export const capitalAccounts = [
+  {
+    id: 1,
+    investor: "A",
+    name: "Alfonso",
+    totalCapital: "$1,250,000",
+    investedCapital: "$850,000",
+    availableCapital: "$400,000",
+    profit: "$120,000",
+  },
+  {
+    id: 2,
+    investor: "C",
+    name: "Carlos",
+    totalCapital: "$800,000",
+    investedCapital: "$520,000",
+    availableCapital: "$280,000",
+    profit: "$75,000",
+  },
+  {
+    id: 3,
+    investor: "G",
+    name: "Gerardo",
+    totalCapital: "$650,000",
+    investedCapital: "$430,000",
+    availableCapital: "$220,000",
+    profit: "$62,000",
+  },
+  {
+    id: 4,
+    investor: "M",
+    name: "María",
+    totalCapital: "$550,000",
+    investedCapital: "$380,000",
+    availableCapital: "$170,000",
+    profit: "$45,000",
+  },
+];
+
+export const capitalMovements = [
+  {
+    id: 1,
+    date: "10/01/2026",
+    investor: "A",
+    concept: "Aportación inicial",
+    type: "Ingreso",
+    amount: "+$250,000",
+  },
+  {
+    id: 2,
+    date: "14/01/2026",
+    investor: "A",
+    concept: "Gasto extra",
+    type: "Gasto",
+    amount: "-$15,000",
+  },
+  {
+    id: 3,
+    date: "18/01/2026",
+    investor: "C",
+    concept: "Aportación para proyecto",
+    type: "Ingreso",
+    amount: "+$100,000",
+  },
+];

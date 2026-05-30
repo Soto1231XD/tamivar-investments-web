@@ -1,0 +1,38 @@
+export const investors = [
+  {
+    id: 1,
+    name: "Alfonso",
+    alias: "A",
+    totalCapital: "$1,250,000",
+    investedCapital: "$850,000",
+    availableCapital: "$400,000",
+    status: "Activo",
+  },
+  {
+    id: 2,
+    name: "Carlos",
+    alias: "C",
+    totalCapital: "$800,000",
+    investedCapital: "$520,000",
+    availableCapital: "$280,000",
+    status: "Activo",
+  },
+  {
+    id: 3,
+    name: "Gerardo",
+    alias: "G",
+    totalCapital: "$650,000",
+    investedCapital: "$430,000",
+    availableCapital: "$220,000",
+    status: "Activo",
+  },
+  {
+    id: 4,
+    name: "María",
+    alias: "M",
+    totalCapital: "$550,000",
+    investedCapital: "$380,000",
+    availableCapital: "$170,000",
+    status: "Activo",
+  },
+];
