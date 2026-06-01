@@ -6,6 +6,7 @@ import {
   ArrowLeftRight,
   Building2,
   CircleDollarSign,
+  FileText,
   LayoutDashboard,
   Users,
   Wallet,
@@ -17,14 +18,15 @@ const navigation = [
   { name: "Inversionistas", href: "/investors", icon: Users },
   { name: "Proyectos", href: "/projects", icon: Building2 },
   { name: "Movimientos", href: "/movements", icon: ArrowLeftRight },
+  { name: "Reportes", href: "/reports", icon: FileText },
 ];
 
 export function AppSidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="fixed left-0 top-0 z-40 h-screen w-72 border-r border-zinc-200 bg-white">
-      <div className="flex h-20 items-center gap-3 border-b border-zinc-200 px-6">
+    <aside className="fixed inset-x-0 bottom-0 z-40 border-t border-zinc-200 bg-white lg:inset-x-auto lg:left-0 lg:top-0 lg:h-screen lg:w-72 lg:border-r lg:border-t-0">
+      <div className="hidden h-20 items-center gap-3 border-b border-zinc-200 px-6 lg:flex">
         <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-zinc-900 text-white">
           <Wallet size={22} />
         </div>
@@ -35,7 +37,7 @@ export function AppSidebar() {
         </div>
       </div>
 
-      <nav className="space-y-1 px-4 py-6">
+      <nav className="flex gap-1 overflow-x-auto px-2 py-2 lg:block lg:space-y-1 lg:overflow-visible lg:px-4 lg:py-6">
         {navigation.map((item) => {
           const Icon = item.icon;
           const isActive = pathname === item.href;
@@ -46,12 +48,12 @@ export function AppSidebar() {
               href={item.href}
               className={
                 isActive
-                  ? "flex items-center gap-3 rounded-xl bg-zinc-900 px-4 py-3 text-sm font-medium text-white"
-                  : "flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium text-zinc-600 transition hover:bg-zinc-100 hover:text-zinc-950"
+                  ? "flex min-w-20 flex-1 flex-col items-center justify-center gap-1 rounded-xl bg-zinc-900 px-3 py-2 text-xs font-medium text-white lg:min-w-0 lg:flex-row lg:justify-start lg:gap-3 lg:px-4 lg:py-3 lg:text-sm"
+                  : "flex min-w-20 flex-1 flex-col items-center justify-center gap-1 rounded-xl px-3 py-2 text-xs font-medium text-zinc-600 transition hover:bg-zinc-100 hover:text-zinc-950 lg:min-w-0 lg:flex-row lg:justify-start lg:gap-3 lg:px-4 lg:py-3 lg:text-sm"
               }
             >
               <Icon size={20} />
-              {item.name}
+              <span className="whitespace-nowrap">{item.name}</span>
             </Link>
           );
         })}

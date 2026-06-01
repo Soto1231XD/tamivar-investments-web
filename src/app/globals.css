@@ -24,3 +24,17 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+div.overflow-hidden:has(> table) {
+  overflow-x: auto;
+}
+
+div.overflow-hidden:has(> table) > table {
+  min-width: 44rem;
+}
+
+@media (max-width: 640px) {
+  div.overflow-hidden:has(> table) > table {
+    min-width: 38rem;
+  }
+}
