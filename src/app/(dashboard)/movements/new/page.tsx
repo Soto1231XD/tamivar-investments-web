@@ -28,7 +28,7 @@ export default function NewMovementPage() {
             <label className="text-sm font-medium text-zinc-700">
               Tipo de movimiento
             </label>
-            <select className="h-11 w-full rounded-xl border border-zinc-200 bg-white px-4 text-sm outline-none focus:border-zinc-400">
+            <select className="h-11 w-full rounded-xl border border-zinc-900 bg-white px-4 text-sm text-zinc-900 outline-none focus:border-zinc-400">
               <option>Seleccionar tipo</option>
               <option>Ingreso</option>
               <option>Gasto</option>
@@ -40,12 +40,12 @@ export default function NewMovementPage() {
           </div>
 
           <div className="space-y-2">
-            <label className="text-sm font-medium text-zinc-700">
+            <label className="text-sm font-medium text-zinc-900">
               Fecha
             </label>
             <input
               type="date"
-              className="h-11 w-full rounded-xl border border-zinc-200 bg-white px-4 text-sm outline-none focus:border-zinc-400"
+              className="h-11 w-full rounded-xl border border-zinc-200 bg-white px-4 text-sm text-zinc-900 outline-none focus:border-zinc-400"
             />
           </div>
 
@@ -56,7 +56,7 @@ export default function NewMovementPage() {
             <input
               type="text"
               placeholder="Ej. Pago de notaría, compra de material, aportación..."
-              className="h-11 w-full rounded-xl border border-zinc-200 bg-white px-4 text-sm outline-none focus:border-zinc-400"
+              className="h-11 w-full rounded-xl border border-zinc-200 bg-white px-4 text-sm text-zinc-900 outline-none focus:border-zinc-400"
             />
           </div>
 
@@ -67,7 +67,7 @@ export default function NewMovementPage() {
   <input
     type="text"
     placeholder="Ej. Notaría, Municipio, BBVA, Abogado..."
-    className="h-11 w-full rounded-xl border border-zinc-200 bg-white px-4 text-sm outline-none focus:border-zinc-400"
+    className="h-11 w-full rounded-xl border border-zinc-200 bg-white px-4 text-sm text-zinc-900 outline-none focus:border-zinc-400"
   />
 </div>
 
@@ -75,7 +75,7 @@ export default function NewMovementPage() {
             <label className="text-sm font-medium text-zinc-700">
               Proyecto
             </label>
-            <select className="h-11 w-full rounded-xl border border-zinc-200 bg-white px-4 text-sm outline-none focus:border-zinc-400">
+            <select className="h-11 w-full rounded-xl border border-zinc-200 bg-white px-4 text-sm text-zinc-900 outline-none focus:border-zinc-400">
               <option>Seleccionar proyecto</option>
               <option>SM 101</option>
               <option>Popolvuh</option>
@@ -88,7 +88,7 @@ export default function NewMovementPage() {
             <label className="text-sm font-medium text-zinc-700">
               Inversionista
             </label>
-            <select className="h-11 w-full rounded-xl border border-zinc-200 bg-white px-4 text-sm outline-none focus:border-zinc-400">
+            <select className="h-11 w-full rounded-xl border border-zinc-200 bg-white px-4 text-sm text-zinc-900 outline-none focus:border-zinc-400">
               <option>Seleccionar inversionista</option>
               <option>Alfonso</option>
               <option>Carlos</option>
@@ -101,7 +101,7 @@ export default function NewMovementPage() {
             <label className="text-sm font-medium text-zinc-700">
               Categoría
             </label>
-            <select className="h-11 w-full rounded-xl border border-zinc-200 bg-white px-4 text-sm outline-none focus:border-zinc-400">
+            <select className="h-11 w-full rounded-xl border border-zinc-200 bg-white px-4 text-sm text-zinc-900 outline-none focus:border-zinc-400">
               <option>Seleccionar categoría</option>
               <option>Materiales</option>
               <option>Legal</option>
@@ -120,7 +120,7 @@ export default function NewMovementPage() {
             <input
               type="number"
               placeholder="0.00"
-              className="h-11 w-full rounded-xl border border-zinc-200 bg-white px-4 text-sm outline-none focus:border-zinc-400"
+              className="h-11 w-full rounded-xl border border-zinc-200 bg-white px-4 text-sm text-zinc-900 outline-none focus:border-zinc-400"
             />
           </div>
 
@@ -131,7 +131,7 @@ export default function NewMovementPage() {
             <textarea
               rows={4}
               placeholder="Agrega observaciones adicionales..."
-              className="w-full resize-none rounded-xl border border-zinc-200 bg-white px-4 py-3 text-sm outline-none focus:border-zinc-400"
+              className="w-full resize-none rounded-xl border border-zinc-200 bg-white px-4 py-3 text-sm text-zinc-900 outline-none focus:border-zinc-400"
             />
           </div>
         </div>
