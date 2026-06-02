@@ -10,7 +10,7 @@ export default function DashboardLayout({
     <>
       <AppSidebar />
 
-      <div className="min-h-screen bg-zinc-50 pb-24 lg:pb-0 lg:pl-72">
+      <div className="min-h-screen overflow-x-hidden bg-zinc-50 pb-24 lg:pb-0 lg:pl-72">
         <AppHeader />
 
         <main className="px-4 py-6 sm:px-6 lg:p-8">{children}</main>
